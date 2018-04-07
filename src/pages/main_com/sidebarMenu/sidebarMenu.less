@@ -1,0 +1,111 @@
+@import '../../../styles/custom.less';
+.sidebar-menu-con::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.sidebar-menu-con::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.sidebar-menu-con::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+.sidebar-menu-con::-webkit-scrollbar {
+    width: 0;
+    height:0;
+    background-color: transparent;
+}
+.sidebar-menu-con {
+    width: 200px;
+    overflow: auto;
+    background: #fff;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 21;
+    transition: width .4s;
+    overflow-x: hidden;
+    border-right: 1px solid #efe3e5;
+    
+    .menu-po {
+        width: 200px!important;
+    }
+    .logo-con {
+        text-align: center;
+        padding: 20px;
+        height: 65px;
+        img {
+            width: 100%;
+        }
+    }
+}
+.menu-icon{
+    color: rgba(0,0,0,0.50);
+    transition:font-size .15s cubic-bezier(.215,.61,.355,1),margin .3s cubic-bezier(.645,.045,.355,1);
+    font-size: 16px;
+}
+.font-center{
+    .font-center-btn{
+        width: 70px;
+        margin-left: -5px;
+        padding:10px 0;
+    }
+}
+/** 收缩状态**/
+.sidebar-menu-sk {
+    width: 60px;
+    .logo-con{
+        padding: 10px;
+    }
+    .menu-icon {
+        transition:font-size .15s cubic-bezier(.215,.61,.355,1),margin .3s cubic-bezier(.645,.045,.355,1);
+        font-size: 24px;
+    }
+    .font-center:hover .menu-icon{
+        color: @white-cyan;
+    }
+    .ivu-dropdown-item{
+        padding: 9px 13px;
+        text-align: left;
+    }
+    .ivu-dropdown-menu{
+        max-height: 200px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}
+.layout-text{
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 14px;
+    opacity: .85;
+}
+.ivu-menu-vertical .ivu-menu-item, .ivu-menu-vertical .ivu-menu-submenu-title{
+    white-space: normal;
+    padding: 8px 16px;
+}
+.ivu-menu-submenu-title>.ivu-icon{
+    margin-right: 0;
+}
+// active样式
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu){
+    color: @white-cyan;
+    border: 0;
+}
+.ivu-menu-submenu{
+    border-left: 3px solid transparent;
+    
+}
+.ivu-menu-opened{
+    border-color: @white-cyan;
+    background-color: #fcfcfc;
+    .ivu-menu-submenu-title,.menu-icon{
+        color: @white-cyan;
+    }
+}
+.ivu-menu-vertical .ivu-menu-item:hover, .ivu-menu-vertical .ivu-menu-submenu-title:hover{
+    color: @white-cyan;
+    background-color: transparent;
+    i{
+        color: @white-cyan;
+    }
+}

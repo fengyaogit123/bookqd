@@ -1,0 +1,22 @@
+
+.theme-create-black(@n, @i: 1) when (@i =< @n) {
+    @theme:extract(@theme-black-list,@i);
+    .@{theme}{
+        .ivu-menu-light,
+        .sidebar-menu-con{
+            background-color: @theme-black;
+            transition: all 0.4s;
+        }
+        .ivu-menu-opened{
+            background-color: @theme-opened;
+            transition: all 0.4s;
+        }
+        
+        .menu-icon,
+        .ivu-menu{
+            color: @theme-black-default;
+            transition: all 0.4s;
+        }
+    }
+    .theme-create-black(@n, (@i + 1));
+}

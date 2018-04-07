@@ -1,0 +1,53 @@
+//顶部变色 左侧白色
+.theme-create(@n, @i: 1) when (@i =< @n) {
+  @theme:extract(@theme-list,@i);
+    .@{theme}{ 
+        .header{
+            background-color: @@theme;
+        }
+        .sidebar-menu-con .font-center:hover .menu-icon{
+            color: @@theme;
+        }
+        .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu){
+            color: @@theme;
+        }
+        .ivu-menu-item-active .menu-icon{
+            color: @@theme;
+        }
+        .ivu-menu-opened{
+            border-color: @@theme;
+            .ivu-menu-submenu-title,.menu-icon{
+                color: @@theme;
+            }
+        }
+        .ivu-menu-vertical .ivu-menu-item:hover, .ivu-menu-vertical .ivu-menu-submenu-title:hover{
+            color:@@theme;
+            i{
+                color:@@theme;
+            }
+        }
+    }
+  .theme-create(@n, (@i + 1));
+}
+//黑色背景特殊处理
+@black-color:rgba(255,255,255,.8)!important;
+.black-black{
+    .sidebar-menu-con .font-center:hover .menu-icon{
+        color:@black-color;
+    }
+    .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu){
+        color: @black-color;
+    }
+    .ivu-menu-opened{
+        border-color:@black-color;
+        .ivu-menu-submenu-title,.menu-icon{
+            color: @black-color;
+        }
+    }
+    .ivu-menu-vertical .ivu-menu-item:hover, .ivu-menu-vertical .ivu-menu-submenu-title:hover{
+        color:@black-color;
+        i{
+            color:@black-color;
+        }
+    }
+}

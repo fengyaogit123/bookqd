@@ -1,0 +1,71 @@
+#login {
+    height: 100%;
+    background: url(../../../static/imgs/login-bg.jpg) center center;
+    background-size: cover;
+    .login-mask {
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+    .form-sub {
+      .icon {
+        vertical-align: middle;
+        margin-left: 16px;
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.2);
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+      i.icon-weibo-copy {
+        .icon;
+        &:hover {
+          color: rgba(230, 22, 45, 0.7);
+        }
+      }
+    }
+    .form-wrap {
+      h1 {
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 33px;
+      }
+      p {
+        text-align: center;
+        padding: 15px 0;
+        span {
+          padding: 0 10px;
+          padding-bottom: 10px;
+          font-size: 18px;
+          display: inline-block;
+        }
+      }
+      width: 380px;
+      background-color: #fff;
+      padding: 15px 30px;
+      border-radius: 4px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+    }
+    .form-margin {
+      margin-bottom: 15px;
+    }
+    .form-code {
+      padding-right: 105px;
+      position: relative;
+    }
+    .checkcode {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 36px;
+      border: 1px solid #dddee1;
+    }
+    @media screen and(max-width:678px) {
+      .form-wrap {
+        width: 90%;
+        margin-left: 0;
+      }
+    }
+  }
