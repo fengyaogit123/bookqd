@@ -1,8 +1,8 @@
 **前端**
     
-	[前端地址](https://github.com/fengyaogit123/bookqd.git)
-	[后端地址](https://github.com/fengyaogit123/bookAdmin.git)
-    [在线预览](http://118.24.74.131:7001/public/web/index.html)	
+[前端地址](https://github.com/fengyaogit123/bookqd.git)
+[后端地址](https://github.com/fengyaogit123/bookAdmin.git)
+
 	觉得不错给个star，谢谢~
     
 # 介绍
