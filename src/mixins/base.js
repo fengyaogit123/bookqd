@@ -10,6 +10,11 @@ export default {
         async reset(form) {
             form && form.resetFields();
         },
+        //查询
+        async search() {
+            this.params.pageNo = 1;
+            this.showList()
+        },
         //多选
         async selectChange(rows) {
             this.rows = rows;
